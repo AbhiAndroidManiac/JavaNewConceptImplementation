@@ -5,7 +5,10 @@ import java.lang.reflect.Method;
 
 public class Main {
     public static void main(String[] args) {
-        accessAnnotationInJava();
+
+        System.out.println("The value of the");
+
+        //accessAnnotationInJava();
     }
 
 
