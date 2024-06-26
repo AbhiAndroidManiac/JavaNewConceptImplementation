@@ -21,7 +21,6 @@ public class BubbleSort implements SortAlgorithm {
         //expected output is Double[] output = {1.41, 1.73, 2.71, 3.14};
         Double[] inputDouble = {3.14, 2.71, 1.41, 1.73};
         System.out.println(Arrays.toString(instance.sort(inputDouble)));
-
     }
 
     @Override
