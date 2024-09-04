@@ -1,22 +1,24 @@
 Some important algorithms to look out for. 
--Merge Sort
--Quick Sort
--QuickSelect
--Binary Search
--Depth-First Search
--Breadth-First Search
--Djikstra's Algorithm
--Dynamic programming
--Fibonacci Sequence
--Longest common subsequence
--Binary Tree Traversals(inorder, Preorder,Postorder)
--Heap sort
--Knapsack Problem
--Floyd-Warshall algorithm
--Union Find
--Topological Sort
--Kruskal's Algorithm
--Prim's Algorithm
--Bellman-Ford Algorithm
--Kadane's Algorithm
--Flood fill algorithm
+< br / >-Merge Sort
+< br / >-Quick Sort
+< br / >-QuickSelect
+< br / >-Binary Search
+< br / >-Depth-First Search
+< br / >-Breadth-First Search
+< br / >-Djikstra's Algorithm
+< br / >-Dynamic programming
+< br / >-Fibonacci Sequence
+< br / >-Longest common subsequence
+< br / >-Binary Tree Traversals(inorder, Preorder,Postorder)
+< br / >-Heap sort
+< br / >-Knapsack Problem
+< br / >-Floyd-Warshall algorithm
+< br / >-Union Find
+< br / >-Topological Sort
+< br / >-Kruskal's Algorithm
+< br / >-Prim's Algorithm
+< br / >-Bellman-Ford Algorithm
+< br / >-Kadane's Algorithm
+< br / >-Flood fill algorithm
+< br / >-Rabin-Karp Algorithm
+< br / >-Flood fill Algorithm
