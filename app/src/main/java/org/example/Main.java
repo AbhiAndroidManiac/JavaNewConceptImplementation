@@ -3,39 +3,45 @@ package org.example;
 
 import org.example.annotations.SampleAnnotation;
 import java.lang.reflect.Method;
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("The value of the");
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
-        list.add(6);
-        list.add(7);
-        list.add(8);
-        Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()){
-            Integer value = iterator.next();
-            if (value==6){
-                iterator.remove();
-            }
-           new Thread(() -> list.remove(list.size()-2));
-
-
-        }
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
-
+        Main main = new Main();
+        int[] arr = {1, 2, 3, 3, 3, 4, 4, 5};
+        int key = 2;
+        System.out.println(main.containsElement(arr,key));
         //accessAnnotationInJava();
     }
-
+    boolean containsElement (int[] arr, int key) {
+        // add your logic here
+       /* boolean result = false;
+        for(int i=0;i<arr.length;i++){
+            if (arr[i]==key){
+                result = true;
+                break;
+            }
+        }*/
+        int n = arr.length;
+        return binarySearch(arr,0,n-1,key);
+    }
+    boolean binarySearch(int[] arr, int low, int high, int key){
+        boolean result = false;
+        if (high>=low){
+            int mid = (high+low)/2;
+            if (arr[mid]==key){
+                result = true;
+            } else if (arr[mid] < key){
+                result=binarySearch(arr, mid+1, high, key);
+            } else {
+                result=binarySearch(arr,low,mid-1,key);
+            }
+        }
+        return result;
+    }
 
     //accessing annotation values attached
     public static void  accessAnnotationInJava(){

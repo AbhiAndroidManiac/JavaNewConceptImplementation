@@ -19,6 +19,9 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation(libs.guava)
+    implementation ("com.auth0:java-jwt:3.18.2") // Check for the latest version
+    implementation ("com.fasterxml.jackson.core:jackson-databind:2.13.0") // Check for the latest version
+
 }
 
 testing {
@@ -34,11 +37,11 @@ testing {
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(23)
     }
 }
-
+//change the main class for running different main method of different classes
 application {
     // Define the main class for the application.
-    mainClass = "org.example.App"
+    mainClass = "org.example.generatetoken.JwtGenerator"
 }

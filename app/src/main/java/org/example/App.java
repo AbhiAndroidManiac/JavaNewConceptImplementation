@@ -3,12 +3,26 @@
  */
 package org.example;
 
+import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        String startTime = "09:45";
+        String endTime = "14:30";
+
+        LocalTime startTimeInFormat = LocalTime.parse(startTime);
+        LocalTime endTimeInFormat = LocalTime.parse(endTime);
+
+        // Calculate the difference in minutes
+        long minutesDifference = ChronoUnit.MINUTES.between(startTimeInFormat, endTimeInFormat);
+
+
+        System.out.println(minutesDifference);
+        //System.out.println(new App().getGreeting());
     }
 }
